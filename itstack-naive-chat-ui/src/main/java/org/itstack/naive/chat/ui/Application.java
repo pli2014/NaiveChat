@@ -22,7 +22,7 @@ public class Application extends javafx.application.Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-
+        primaryStage.setResizable(true);
         IChatMethod chat = new ChatController(new IChatEvent() {
             @Override
             public void doQuit() {
@@ -94,7 +94,7 @@ public class Application extends javafx.application.Application {
         chat.addFriendGroup("5307399", "洗脚城VIP", "group_3");
 
         // 群组 - 对话框
-        chat.addTalkBox(0, 1, "5307397", "虫洞技术栈(1区)", "group_1", "", new Date(), true);
+        chat.addTalkBox(0, 1, "5307397", "WeChat演示聊天", "group_1", "", new Date(), true);
         chat.addTalkMsgRight("5307397", "你炸了我的山", 0, new Date(), true, true, false);
         chat.addTalkMsgRight("5307397", "f_14", 1, new Date(), true, true, false);
         chat.addTalkMsgGroupLeft("5307397", "1000002", "拎包冲", "01_50", "推我过忘川", 0, new Date(), true, false, true);

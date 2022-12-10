@@ -59,3 +59,5 @@
 如果本项目能为您提供帮助，请给予支持(关注、点赞、分享)！
 
 
+JavaFX启动JVM参数：
+--module-path "javafx-sdk-19\lib" --add-modules javafx.controls,javafx.fxml

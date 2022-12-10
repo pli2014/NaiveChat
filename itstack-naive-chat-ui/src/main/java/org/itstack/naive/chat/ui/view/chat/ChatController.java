@@ -45,6 +45,7 @@ public class ChatController extends ChatInit implements IChatMethod {
 
     @Override
     public void doShow() {
+        this.setResizable(true);
         super.show();
     }
 
